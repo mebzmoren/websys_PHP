@@ -10,7 +10,7 @@
     <p>test</p>
 
     <?php
-        echo "success!";
+        echo "success! testing";
     ?>
 </body>
 </html>
