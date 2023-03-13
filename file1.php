@@ -87,12 +87,36 @@
     echo $len . " " . $min . " " . $max;
 
     echo "<br><br>";
-
+    
+    //seatwork
     $watches = array(   array("fossil", "brown leather", 6000),
                         array("obaku", "mesh type", 5500),
                         array("guess", "stainless", 4500));
+
+    $var1 = 10;
+    $var2 = "dog";
+    echo isset($var1) . "<br>";
+    echo isset($var2) . "<br>";
+    unset($var1);   //destroys the variable
+
+    echo "<br>";
+    
+    $str = "Apple of my eye";
+    echo str_replace("Apple", "banana", $str);
+
+    echo "<br><br>";
+    
+    //seatwork
+    $str1 = "Juan Luna<br><br>";
+    echo "STRING IS: " . $str1;
+    $eName = explode(" ",$str1);
+    $fName = $eName[0];
+    $lName = $eName[1];
+    echo "FirstName: " . $fName . "<br>";
+    echo "LastName: " . $lName . "<br>";
 ?>
 
+<!--seatwork-->
 <body>
     <table border = "1">
         <thead>
