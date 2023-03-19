@@ -11,7 +11,7 @@
         //printing
         echo "Hello!";
         print("Hello!");        //another way to print
-        echo "Hello" . "World"; //to concatenate strings
+        echo "Hello" . "World<br>"; //to concatenate strings
 
         //varrialbles
         $var1 = "Hello";        //to declare a variable
@@ -19,7 +19,8 @@
         $var3 = null;
         $var4 = 1.0;
         $var5 = 1;
-
+        
+        echo $var9 = 90;        //another way to print variable
         echo "<br>$var1<br>";   //to print variable
         $var1;                  //will not print and won't display as an error
         var_dump($var1);        //will print the structured information
@@ -31,8 +32,12 @@
         define("score", 100, true);
         echo school;
         echo score;
+        echo "<br>$var1 $var2";
+        echo "<br>Greeting: $var1<br>";
+        echo $var1;
 
-        if($var4 == $var5)
+        //if else statements
+        if($var4 == $var5)           
             echo "<br>Equal";
         else
             echo "<br>Not Equal";
@@ -91,7 +96,7 @@
                 echo "Not Equal";
         }
 
-        thisone(5);
+        thisone(6);
 
         echo "<br>";
 
@@ -122,9 +127,41 @@
         $age = array(   "Peter" => "35",
                         "Ben" => "37");
         
-        foreach($age as $key){
-            echo "<br> $key";
+        foreach($age as $key => $value){
+            echo "<br> $key => $value";
         }
+
+        echo "<br>";
+
+        $var10 = 5;
+        $var11 = 10;
+        echo $var12 = 1 + 1;
+
+        echo "<br>";
+
+        echo ($var10 + $var11)/5;
+
+        echo "<br>";
+
+        $var10 += $var11;
+        echo $var10;
+
+        echo "<br>";
+
+        echo ++$var12;  //incrementing
+
+        echo "<br>";
+
+        //floats
+        $flt1 = 23.005;
+
+        echo "$flt1<br>";
+        $flt2 = round($flt1, 2);    //rounds up to decimal places
+        echo "$flt2<br>";
+        $flt3 = ceil($flt2);        //rounds up
+        echo "$flt3<br>";
+        $flt4 = floor($flt2);       //rounds down
+        echo "$flt4<br>";
 
         phpinfo();  //outputs how the version of php was configured
     ?>
